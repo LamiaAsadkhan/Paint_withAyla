@@ -2,12 +2,72 @@
 
 {% block content %}
 <h1>My Paintings</h1>
-<p>Here are some of my paintings:</p>
+
+<h2>Sufism</h2>
 <div class="gallery">
-    {% for i in range(1, 16) %}
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/painting_' ~ i ~ '.jpg') }}" alt="Painting {{ i }}">
+        <img src="{{ url_for('static', filename='images/sufi1.jpg') }}" alt="Sufism Painting 1">
     </div>
-    {% endfor %}
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/sufi2.jpg') }}" alt="Sufism Painting 2">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/sufi3.jpg') }}" alt="Sufism Painting 3">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/sufi4.jpg') }}" alt="Sufism Painting 4">
+    </div>
 </div>
+
+<h2>Calligraphy</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/cali1.jpg') }}" alt="Calligraphy Painting 1">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/cali2.jpg') }}" alt="Calligraphy Painting 2">
+    </div>
+</div>
+
+<h2>Whimsical Wonders</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint1.jpg') }}" alt="A pot">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint2.jpg') }}" alt="Sunflowers">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint3.jpg') }}" alt="A pot">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint4.jpg') }}" alt="Insaan">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint5.jpg') }}" alt="Candle">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint6.jpg') }}" alt="Dancing Dolls">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint7.jpg') }}" alt="Magical Leaf">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/paint8.jpg') }}" alt="Ephemeral">
+    </div>
+</div>
+
+<h2>Mini Paintings</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/minipaintings.jpg') }}" alt="Mini Paintings">
+    </div>
+</div>
+<h2>Mood Board</h2>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/moodboard.jpg') }}" alt="Mood Board">
+    </div>
+</div>
+
 {% endblock %}
