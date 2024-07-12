@@ -3,8 +3,8 @@
 {% block content %}
 <h1>My Paintings</h1>
 
-<h2>Sufism</h2>
-<div class="gallery">
+<h2 onclick="toggleSection('sufism')">Sufism</h2>
+<div id="sufism" class="gallery" style="display:none;">
     <div class="gallery-item">
         <img src="{{ url_for('static', filename='images/sufi1.jpg') }}" alt="Sufism Painting 1">
     </div>
@@ -19,8 +19,8 @@
     </div>
 </div>
 
-<h2>Calligraphy</h2>
-<div class="gallery">
+<h2 onclick="toggleSection('calligraphy')">Calligraphy</h2>
+<div id="calligraphy" class="gallery" style="display:none;">
     <div class="gallery-item">
         <img src="{{ url_for('static', filename='images/cali1.jpg') }}" alt="Calligraphy Painting 1">
     </div>
@@ -29,45 +29,49 @@
     </div>
 </div>
 
-<h2>Whimsical Wonders</h2>
-<div class="gallery">
+<h2 onclick="toggleSection('whimsical')">Whimsical Wonders</h2>
+<div id="whimsical" class="gallery" style="display:none;">
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint1.jpg') }}" alt="A pot">
+        <img src="{{ url_for('static', filename='images/paint1.jpg') }}" alt="Whimsical Painting 1">
     </div>
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint2.jpg') }}" alt="Sunflowers">
+        <img src="{{ url_for('static', filename='images/paint2.jpg') }}" alt="Whimsical Painting 2">
     </div>
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint3.jpg') }}" alt="A pot">
+        <img src="{{ url_for('static', filename='images/paint3.jpg') }}" alt="Whimsical Painting 3">
     </div>
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint4.jpg') }}" alt="Insaan">
+        <img src="{{ url_for('static', filename='images/paint4.jpg') }}" alt="Whimsical Painting 4">
     </div>
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint5.jpg') }}" alt="Candle">
+        <img src="{{ url_for('static', filename='images/paint5.jpg') }}" alt="Whimsical Painting 5">
     </div>
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint6.jpg') }}" alt="Dancing Dolls">
+        <img src="{{ url_for('static', filename='images/paint6.jpg') }}" alt="Whimsical Painting 6">
     </div>
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint7.jpg') }}" alt="Magical Leaf">
+        <img src="{{ url_for('static', filename='images/paint7.jpg') }}" alt="Whimsical Painting 7">
     </div>
     <div class="gallery-item">
-        <img src="{{ url_for('static', filename='images/paint8.jpg') }}" alt="Ephemeral">
+        <img src="{{ url_for('static', filename='images/paint8.jpg') }}" alt="Whimsical Painting 8">
     </div>
 </div>
 
-<h2>Mini Paintings</h2>
-<div class="gallery">
+<h2 onclick="toggleSection('mini')">Mini Paintings</h2>
+<div id="mini" class="gallery" style="display:none;">
     <div class="gallery-item">
         <img src="{{ url_for('static', filename='images/minipaintings.jpg') }}" alt="Mini Paintings">
     </div>
 </div>
-<h2>Mood Board</h2>
-<div class="gallery">
+
+<h2 onclick="toggleSection('mood')">Mood Board</h2>
+<div id="mood" class="gallery" style="display:none;">
     <div class="gallery-item">
         <img src="{{ url_for('static', filename='images/moodboard.jpg') }}" alt="Mood Board">
     </div>
 </div>
 
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
 {% endblock %}
+
